@@ -48,7 +48,7 @@ lecture, and then complete the rest of the exercises on your own.
 
 First, you need to _fork_ this repository into _your_ group. 
 
-Look way up at the top right corner of this web page -- there should be a button that says 'fork'. You know what to do with that -right?
+You can click this link: [fork](https://gitlab.csi.miamioh.edu/cse465/instructor/lab02/-/forks/new) to make a fork of the repo, or you can go to the homepage of the assignment and look for the _fork_ button on the top left. 
 
 Once you have a fork you need to _clone_ it into your container. 
 Navigate to _your_ fork (not this repo!)
