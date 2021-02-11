@@ -48,7 +48,9 @@ lecture, and then complete the rest of the exercises on your own.
 
 First, you need to _fork_ this repository into _your_ group. 
 
-You can click this link: [fork](https://gitlab.csi.miamioh.edu/cse465/instructor/lab02/-/forks/new) to make a fork of the repo, or you can go to the homepage of the assignment and look for the _fork_ button on the top left. 
+You can click this link:  
+\[ **[fork the assignment](https://gitlab.csi.miamioh.edu/cse465/instructor/lab02/-/forks/new)**  \]  
+to make a fork of the repo, or you can go to the homepage of the assignment and look for the _fork_ button on the top right. 
 
 Once you have a fork you need to _clone_ it into your container. 
 Navigate to _your_ fork (not this repo!)
@@ -60,7 +62,7 @@ In your container, type
 ```
 git clone https://gitlab.csi.miamioh.edu/cse465/yourid/lab02.got
 ```
-You did not actually type `yourid` did you? Good. 
+The URL you use should begin with 'https' and should include your userid. You did not actually type `yourid` did you? Good. 
 
 
 Change directories into the `lab02` folder
@@ -69,7 +71,7 @@ Change directories into the `lab02` folder
 cd lab02
 ```
 
-Now -- it is annoyting to keep typing passwords every time we clone, push, or pull from gitlab. 
+Now -- it is annoying to keep typing passwords every time we clone, push, or pull from gitlab. 
 An easy way to fix this is to type
 
 ```
@@ -92,19 +94,22 @@ To make sure you get any changes I make to the assignment in response to issues 
 git pull instructor
 ```
 
-You are not ready to follow along with me in class. Your job is to edit the `.scm` files in this 
+You are now ready to follow along with me in class.
+
+Your job is to edit the `.scm` files in this 
 repository, implementing the scheme functions indicated by comments in the file. 
 
-To test your solutions, type
-
-```
-make check
-```
 
 To test a particlar file (e.g. 'list.scm') type 
 
 ```
 make check-list
+```
+
+To test if you have done everything, type
+
+```
+make check
 ```
 
 Every time you make changes you should save your work
@@ -128,6 +133,12 @@ git push
 Then copy the URL of your repo and paste it into the submission page on Canvas.
 
 
-
-Then, 
+If you have any questions or issues:
+1. **DO NOT** wait until the night before it is due to start (!!!!!!)
+2. Reread this and watch the lectures, and read the chapter, to make sure you are not asking something that was already addressed. 
+3. Search through Piazza to see if anyone has asked the question. 
+3. Ask on Piazza - but first make a serious effort to solve it yourself - it is respectful of others to try to solve things on your own before immediately asking for help. 
+4. Ask the question **publicly** on Piazza, you can still stat anonymous to your classmates.  
+   Private messages are for personal questions or questions that might reveal a solution to an assignment.  
+5. Make sure to provide _all_ of the relevant information. E.g. what is the output you are getting vs what you expect? 
 
