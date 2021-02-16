@@ -23,8 +23,10 @@
 	)
 )
 
+
+
 (define (maxelt lst)
-	(if (= (length lst) 1)
+	(if (null? (cdr lst))
 		(car lst) 
 		(max (car lst) (maxelt (cdr lst))))
 )
@@ -65,7 +67,7 @@
 (newline)
 (display "Testing allbutlast")(newline)
 (display (allbutlast '(1 2 3 4 5)))(newline) ; expect (1 2 3 4)
-(display (allbutlast '(1)))(newline) ; expect (1 )
+(display (allbutlast '(1)))(newline) ; expect ()
 
 
 (define (ismember atm lst)
