@@ -18,8 +18,8 @@ check-list: list.output
 	@echo check-list -- Success!
 
 update:
-	git pull git@gitlab.csi.miamioh.edu:CSE465/femianjc/lab02.git master
+	git pull git@gitlab.csi.miamioh.edu:CSE465/instructor/lab02.git master
 
-submit:
+submit: check
 	git commit -am "Final submission"
 	git push
