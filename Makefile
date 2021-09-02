@@ -17,3 +17,9 @@ check-list: list.output
 	diff -y list.output list.expected
 	@echo check-list -- Success!
 
+update:
+	git pull git@gitlab.csi.miamioh.edu:CSE465/femianjc/lab02.git master
+
+submit:
+	git commit -am "Final submission"
+	git push
