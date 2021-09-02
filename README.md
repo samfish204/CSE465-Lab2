@@ -1,44 +1,5 @@
 # Lab 02
 
-
-
-# A bit about docker
-
-For this lab, I want to make sure we are _reusing_ the same docker container each time.
-
-To start, please open Powershell of bash. 
-
-First, check to see which docker containers you have running:
-
-```
-docker ps -a
-```
-
-If you find there are many containers, it is likely that we created unnecessary containers. 
-
-You can remove them all with this instruction
-
-```
-docker rm -f $(docker ps -a -q)
-```
-
-To make ONLY one container, we use the `--name` flag. 
-
-```
-docker create --name 465 -it -v C:\path\tp\course\files:/root femianjc/cse465
-```
-
-Now, to start your container type
-
-```
-docker start -ai 465
-```
-
-This will restart a container you have already used before, which rather than create a new container each time. 
-The `-ai` flag will _attach_ the shell process to the container and start an _interactive_ session. 
-
-It is much easier to remember to type `docker start -ai 465` each time you work on this class. 
-
 # What to DO
 
 We will be going over some example scheme files in class.
@@ -46,65 +7,10 @@ I want you to follow along with the solutions to some exercises we do during the
 lecture, and then complete the rest of the exercises on your own. 
 
 
-First, you need to _fork_ this repository into _your_ group. 
-
-You can click this link:  
-\[ **[fork the assignment](https://gitlab.csi.miamioh.edu/cse465/instructor/lab02/-/forks/new)**  \]  
-to make a fork of the repo, or you can go to the homepage of the assignment and look for the _fork_ button on the top right. 
-
-Once you have a fork you need to _clone_ it into your container. 
-Navigate to _your_ fork (not this repo!)
-Click on the 'clone' button and select the 'HTTPS' url. 
-Copy it into your clipboard. 
-
-In your container, type
-
-```
-git clone https://gitlab.csi.miamioh.edu/cse465/yourid/lab02.got
-```
-The URL you use should begin with 'https' and should include your userid. You did not actually type `yourid` did you? Good. 
-
-
-Change directories into the `lab02` folder
-
-```
-cd lab02
-```
-
-Now -- it is annoying to keep typing passwords every time we clone, push, or pull from gitlab. 
-An easy way to fix this is to type
-
-```
-git config --global credential.helper 'store --file ~/.my-credentials'
-git pull
-```
-
-
-The next thing I want you do is to add the _instructor_ version of the repository as an 
-additional remote. 
-
-```
-git remote add instructor https://gitlab.csi.miamioh.edu/instructor/lab02.git
-```
-This time, you should actually type `instructor` in the URL. That is where the _assignment_ is. 
-
-To make sure you get any changes I make to the assignment in response to issues raised by students, type
-
-```
-git pull instructor
-```
-
-You are now ready to follow along with me in class.
-
 Your job is to edit the `.scm` files in this 
 repository, implementing the scheme functions indicated by comments in the file. 
 
 
-To test a particlar file (e.g. 'list.scm') type 
-
-```
-make check-list
-```
 
 To test if you have done everything, type
 
@@ -135,10 +41,9 @@ Then copy the URL of your repo and paste it into the submission page on Canvas.
 
 If you have any questions or issues:
 1. **DO NOT** wait until the night before it is due to start (!!!!!!)
-2. Reread this and watch the lectures, and read the chapter, to make sure you are not asking something that was already addressed. 
+2. Reread this, and read the chapter, to make sure you are not asking something that was already addressed. 
 3. Search through Piazza to see if anyone has asked the question. 
-3. Ask on Piazza - but first make a serious effort to solve it yourself - it is respectful of others to try to solve things on your own before immediately asking for help. 
-4. Ask the question **publicly** on Piazza, you can still stat anonymous to your classmates.  
-   Private messages are for personal questions or questions that might reveal a solution to an assignment.  
-5. Make sure to provide _all_ of the relevant information. E.g. what is the output you are getting vs what you expect? 
+4. Ask on Piazza - but first make a serious effort to solve it yourself - it is respectful of others to try to solve things on your own before immediately asking for help. 
+5. Ask the question on Piazza
+6. Make sure to provide _all_ of the relevant information. E.g. what is the output you are getting vs what you expect? 
 
