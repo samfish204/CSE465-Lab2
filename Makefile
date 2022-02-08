@@ -20,6 +20,10 @@ check-list: list.output
 update:
 	git pull git@gitlab.csi.miamioh.edu:CSE465/instructor/lab02.git master
 
-submit: check
-	git commit -am "Final submission"
-	git push
+submit: check submit-without-check
+
+submit-without-check:
+	git add -u 
+	git commit -m "Submission" || echo "** Nothing has changed"
+	git push origin master 
+	git log -1
