@@ -18,7 +18,7 @@ To test if you have done everything, type
 make check
 ```
 
-Every time you make changes you should save your work
+Feel free to periodically save & push your work
 
 ```
 git commit -am "Still working on it!"
@@ -30,10 +30,8 @@ When all tests pass, and you are sure you have done what was _intended_ in the l
 (e.g. not just printed the output I test for, but actually implement the functions to compute it!!!)
 then you are ready to submit to Canvas. 
 
-First, do a final commit and push
 ```
-git commit -am "Finished!"
-git push
+make submit
 ```
 
 Then copy the URL of your repo and paste it into the submission page on Canvas.
